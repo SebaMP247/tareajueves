@@ -1,0 +1,44 @@
+.contenedor{
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "section section1 ads"
+                         "footer footer footer";
+}
+
+.contenedor .header{
+    background-color: chocolate;
+    grid-column:header;
+}
+.contenedor .nav{
+    background-color: tomato;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: darkgoldenrod;
+    grid-column: section;
+}
+.contenedor .section1{
+    background-color: red;
+    grid-column: section1;
+}
+.contenedor .ads{
+    background-color: crimson;
+    grid-column: ads;
+}
+.contenedor .footer{
+    background-color: violet;
+    grid-column: footer;
+}
+
+.contenedor .ads .hijoanuncio{
+    background-color: blueviolet;
+    margin: 20px;
+}
